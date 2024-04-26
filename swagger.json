@@ -439,77 +439,7 @@
                 "tags": [],
                 "parameters": [],
                 "consumes": []
-            }
-        },
-        "/tasks/{taskId}/variables/{ivar_name}": {
-            "get": {
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "headers": {},
-                        "examples": {}
-                    }
-                },
-                "summary": "Get Task Variable",
-                "operationId": "Get Task Variable",
-                "description": "",
-                "tags": [],
-                "parameters": [],
-                "consumes": []
             },
-            "post": {
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "headers": {},
-                        "examples": {
-                            "application/json; charset=utf-8": {
-                                "result": true
-                            }
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "result": {
-                                    "type": "boolean"
-                                }
-                            },
-                            "example": {
-                                "result": true
-                            }
-                        }
-                    }
-                },
-                "summary": "Update Variable",
-                "operationId": "Update Variable",
-                "description": "",
-                "tags": [],
-                "parameters": [
-                    {
-                        "name": "body",
-                        "in": "body",
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "ivar_value": {
-                                    "type": "string"
-                                }
-                            },
-                            "example": {
-                                "ivar_value": "Value of variable (text, number, date, ...)"
-                            }
-                        }
-                    }
-                ],
-                "produces": [
-                    "application/json; charset=utf-8"
-                ],
-                "consumes": [
-                    "application/json"
-                ]
-            }
-        },
-        "/tasks/{taskId}/variables": {
             "post": {
                 "responses": {
                     "200": {
@@ -614,6 +544,74 @@
                 "produces": [
                     "application/json; charset=utf-8",
                     "application/json"
+                ],
+                "consumes": [
+                    "application/json"
+                ]
+            }
+        },
+        "/tasks/{taskId}/variables/{ivar_name}": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "headers": {},
+                        "examples": {}
+                    }
+                },
+                "summary": "Get Task Variable",
+                "operationId": "Get Task Variable",
+                "description": "",
+                "tags": [],
+                "parameters": [],
+                "consumes": []
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "headers": {},
+                        "examples": {
+                            "application/json; charset=utf-8": {
+                                "result": true
+                            }
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "result": {
+                                    "type": "boolean"
+                                }
+                            },
+                            "example": {
+                                "result": true
+                            }
+                        }
+                    }
+                },
+                "summary": "Update Variable",
+                "operationId": "Update Variable",
+                "description": "",
+                "tags": [],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "ivar_value": {
+                                    "type": "string"
+                                }
+                            },
+                            "example": {
+                                "ivar_value": "Value of variable (text, number, date, ...)"
+                            }
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json; charset=utf-8"
                 ],
                 "consumes": [
                     "application/json"
@@ -4880,7 +4878,7 @@
                         "name": "roleId",
                         "in": "path",
                         "description": "Id of a role.",
-                        "required": false,
+                        "required": true,
                         "x-example": "82",
                         "type": "number"
                     }
