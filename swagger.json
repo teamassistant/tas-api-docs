@@ -3082,29 +3082,150 @@
                             ]
                         },
                         "schema": {
-                                "type": "object",
-                                "properties": {
-                                    "total_count": {
-                                        "type": "number"
+                            "type": "object",
+                            "properties": {
+                                "total_count": {
+                                    "type": "number"
+                                },
+                                "meta": {
+                                    "type": "object",
+                                    "properties": {
+                                        "href": {
+                                            "type": "string"
+                                        }
                                     },
-                                    "meta": {
+                                    "required": [
+                                        "href"
+                                    ]
+                                },
+                                "completed_in": {
+                                    "type": "number"
+                                },
+                                "previous": {},
+                                "next": {
+                                    "type": "object",
+                                    "properties": {
+                                        "meta": {
+                                            "type": "object",
+                                            "properties": {
+                                                "href": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "href"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "meta"
+                                    ]
+                                },
+                                "items": {
+                                    "type": "array",
+                                    "items": {
                                         "type": "object",
                                         "properties": {
-                                            "href": {
+                                            "header_code": {
                                                 "type": "string"
-                                            }
-                                        },
-                                        "required": [
-                                            "href"
-                                        ]
-                                    },
-                                    "completed_in": {
-                                        "type": "number"
-                                    },
-                                    "previous": {},
-                                    "next": {
-                                        "type": "object",
-                                        "properties": {
+                                            },
+                                            "header_id": {
+                                                "type": "number"
+                                            },
+                                            "header_name": {
+                                                "type": "string"
+                                            },
+                                            "org_id": {
+                                                "type": "number"
+                                            },
+                                            "tproc_id": {
+                                                "type": "number"
+                                            },
+                                            "iproc_name": {
+                                                "type": "string"
+                                            },
+                                            "iproc_description": {},
+                                            "iproc_notes": {},
+                                            "iproc_inst_owner_user_id": {
+                                                "type": "number"
+                                            },
+                                            "iproc_status": {
+                                                "type": "string"
+                                            },
+                                            "iproc_case_status": {
+                                                "type": "string"
+                                            },
+                                            "iproc_actual_start_date": {
+                                                "type": "string"
+                                            },
+                                            "iproc_actual_finish_date": {
+                                                "type": "string"
+                                            },
+                                            "iproc_due_date_finish": {},
+                                            "iproc_priority": {
+                                                "type": "string"
+                                            },
+                                            "iproc_summary": {
+                                                "type": "string"
+                                            },
+                                            "iproc_main_iproc_id": {
+                                                "type": "number"
+                                            },
+                                            "iproc_vis_role_id": {},
+                                            "user_id": {
+                                                "type": "number"
+                                            },
+                                            "tproc_description": {},
+                                            "iproc_owner_full_name": {
+                                                "type": "string"
+                                            },
+                                            "tproc_name": {
+                                                "type": "string"
+                                            },
+                                            "folstr_name": {},
+                                            "c_sus": {
+                                                "type": "number"
+                                            },
+                                            "c_hev": {
+                                                "type": "number"
+                                            },
+                                            "cs_name_cs": {
+                                                "type": "string"
+                                            },
+                                            "cs_name_en": {
+                                                "type": "string"
+                                            },
+                                            "cs_name_sk": {
+                                                "type": "string"
+                                            },
+                                            "tproc_name_cs": {
+                                                "type": "string"
+                                            },
+                                            "tproc_name_en": {
+                                                "type": "string"
+                                            },
+                                            "tproc_name_sk": {},
+                                            "tproc_description_cs": {},
+                                            "tproc_description_en": {},
+                                            "tproc_description_sk": {},
+                                            "tproc_default_case_name_cs": {},
+                                            "tproc_default_case_name_en": {},
+                                            "tproc_default_case_name_sk": {},
+                                            "iproc_summary_cs": {
+                                                "type": "string"
+                                            },
+                                            "iproc_summary_en": {
+                                                "type": "string"
+                                            },
+                                            "iproc_summary_sk": {
+                                                "type": "string"
+                                            },
+                                            "header_name_cs": {},
+                                            "header_name_en": {},
+                                            "header_name_sk": {},
+                                            "id": {
+                                                "type": "number"
+                                            },
                                             "meta": {
                                                 "type": "object",
                                                 "properties": {
@@ -3118,179 +3239,58 @@
                                             }
                                         },
                                         "required": [
+                                            "header_code",
+                                            "header_id",
+                                            "header_name",
+                                            "org_id",
+                                            "tproc_id",
+                                            "iproc_name",
+                                            "iproc_description",
+                                            "iproc_notes",
+                                            "iproc_inst_owner_user_id",
+                                            "iproc_status",
+                                            "iproc_case_status",
+                                            "iproc_actual_start_date",
+                                            "iproc_due_date_finish",
+                                            "iproc_priority",
+                                            "iproc_main_iproc_id",
+                                            "iproc_vis_role_id",
+                                            "user_id",
+                                            "tproc_description",
+                                            "iproc_owner_full_name",
+                                            "tproc_name",
+                                            "folstr_name",
+                                            "c_sus",
+                                            "c_hev",
+                                            "cs_name_cs",
+                                            "cs_name_en",
+                                            "cs_name_sk",
+                                            "tproc_name_cs",
+                                            "tproc_name_en",
+                                            "tproc_name_sk",
+                                            "tproc_description_cs",
+                                            "tproc_description_en",
+                                            "tproc_description_sk",
+                                            "tproc_default_case_name_cs",
+                                            "tproc_default_case_name_en",
+                                            "tproc_default_case_name_sk",
+                                            "header_name_cs",
+                                            "header_name_en",
+                                            "header_name_sk",
+                                            "id",
                                             "meta"
                                         ]
-                                    },
-                                    "items": {
-                                        "type": "array",
-                                        "items": {
-                                            "type": "object",
-                                            "properties": {
-                                                "header_code": {
-                                                    "type": "string"
-                                                },
-                                                "header_id": {
-                                                    "type": "number"
-                                                },
-                                                "header_name": {
-                                                    "type": "string"
-                                                },
-                                                "org_id": {
-                                                    "type": "number"
-                                                },
-                                                "tproc_id": {
-                                                    "type": "number"
-                                                },
-                                                "iproc_name": {
-                                                    "type": "string"
-                                                },
-                                                "iproc_description": {},
-                                                "iproc_notes": {},
-                                                "iproc_inst_owner_user_id": {
-                                                    "type": "number"
-                                                },
-                                                "iproc_status": {
-                                                    "type": "string"
-                                                },
-                                                "iproc_case_status": {
-                                                    "type": "string"
-                                                },
-                                                "iproc_actual_start_date": {
-                                                    "type": "string"
-                                                },
-                                                "iproc_actual_finish_date": {
-                                                    "type": "string"
-                                                },
-                                                "iproc_due_date_finish": {},
-                                                "iproc_priority": {
-                                                    "type": "string"
-                                                },
-                                                "iproc_summary": {
-                                                    "type": "string"
-                                                },
-                                                "iproc_main_iproc_id": {
-                                                    "type": "number"
-                                                },
-                                                "iproc_vis_role_id": {},
-                                                "user_id": {
-                                                    "type": "number"
-                                                },
-                                                "tproc_description": {},
-                                                "iproc_owner_full_name": {
-                                                    "type": "string"
-                                                },
-                                                "tproc_name": {
-                                                    "type": "string"
-                                                },
-                                                "folstr_name": {},
-                                                "c_sus": {
-                                                    "type": "number"
-                                                },
-                                                "c_hev": {
-                                                    "type": "number"
-                                                },
-                                                "cs_name_cs": {
-                                                    "type": "string"
-                                                },
-                                                "cs_name_en": {
-                                                    "type": "string"
-                                                },
-                                                "cs_name_sk": {
-                                                    "type": "string"
-                                                },
-                                                "tproc_name_cs": {
-                                                    "type": "string"
-                                                },
-                                                "tproc_name_en": {
-                                                    "type": "string"
-                                                },
-                                                "tproc_name_sk": {},
-                                                "tproc_description_cs": {},
-                                                "tproc_description_en": {},
-                                                "tproc_description_sk": {},
-                                                "tproc_default_case_name_cs": {},
-                                                "tproc_default_case_name_en": {},
-                                                "tproc_default_case_name_sk": {},
-                                                "iproc_summary_cs": {
-                                                    "type": "string"
-                                                },
-                                                "iproc_summary_en": {
-                                                    "type": "string"
-                                                },
-                                                "iproc_summary_sk": {
-                                                    "type": "string"
-                                                },
-                                                "header_name_cs": {},
-                                                "header_name_en": {},
-                                                "header_name_sk": {},
-                                                "id": {
-                                                    "type": "number"
-                                                },
-                                                "meta": {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "href": {
-                                                            "type": "string"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "href"
-                                                    ]
-                                                }
-                                            },
-                                            "required": [
-                                                "header_code",
-                                                "header_id",
-                                                "header_name",
-                                                "org_id",
-                                                "tproc_id",
-                                                "iproc_name",
-                                                "iproc_description",
-                                                "iproc_notes",
-                                                "iproc_inst_owner_user_id",
-                                                "iproc_status",
-                                                "iproc_case_status",
-                                                "iproc_actual_start_date",
-                                                "iproc_due_date_finish",
-                                                "iproc_priority",
-                                                "iproc_main_iproc_id",
-                                                "iproc_vis_role_id",
-                                                "user_id",
-                                                "tproc_description",
-                                                "iproc_owner_full_name",
-                                                "tproc_name",
-                                                "folstr_name",
-                                                "c_sus",
-                                                "c_hev",
-                                                "cs_name_cs",
-                                                "cs_name_en",
-                                                "cs_name_sk",
-                                                "tproc_name_cs",
-                                                "tproc_name_en",
-                                                "tproc_name_sk",
-                                                "tproc_description_cs",
-                                                "tproc_description_en",
-                                                "tproc_description_sk",
-                                                "tproc_default_case_name_cs",
-                                                "tproc_default_case_name_en",
-                                                "tproc_default_case_name_sk",
-                                                "header_name_cs",
-                                                "header_name_en",
-                                                "header_name_sk",
-                                                "id",
-                                                "meta"
-                                            ]
-                                        }
                                     }
-                                },
-                                "required": [
-                                    "total_count",
-                                    "meta",
-                                    "completed_in",
-                                    "previous",
-                                    "next",
-                                    "items"
-                                ],
+                                }
+                            },
+                            "required": [
+                                "total_count",
+                                "meta",
+                                "completed_in",
+                                "previous",
+                                "next",
+                                "items"
+                            ],
                             "example": {
                                 "total_count": 11,
                                 "meta": {
@@ -3998,7 +3998,8 @@
                 "tags": [
                     "Case"
                 ],
-                "parameters": [{
+                "parameters": [
+                    {
                         "name": "iproc_id",
                         "in": "path",
                         "schema": {
@@ -4006,7 +4007,8 @@
                             "required": true,
                             "minimum": 1
                         }
-                    }],
+                    }
+                ],
                 "consumes": []
             }
         },
@@ -4025,7 +4027,8 @@
                 "tags": [
                     "Case"
                 ],
-                "parameters": [{
+                "parameters": [
+                    {
                         "name": "iproc_id",
                         "in": "path",
                         "schema": {
@@ -4033,7 +4036,8 @@
                             "required": true,
                             "minimum": 1
                         }
-                    }],
+                    }
+                ],
                 "consumes": []
             }
         },
@@ -4141,7 +4145,8 @@
                 "tags": [
                     "Case"
                 ],
-                "parameters": [{
+                "parameters": [
+                    {
                         "name": "iproc_id",
                         "in": "path",
                         "schema": {
@@ -4149,7 +4154,8 @@
                             "required": true,
                             "minimum": 1
                         }
-                    }],
+                    }
+                ],
                 "produces": [
                     "application/json; charset=utf-8"
                 ],
@@ -4171,7 +4177,8 @@
                 "tags": [
                     "Case"
                 ],
-                "parameters": [{
+                "parameters": [
+                    {
                         "name": "iproc_id",
                         "in": "path",
                         "schema": {
@@ -4179,7 +4186,8 @@
                             "required": true,
                             "minimum": 1
                         }
-                    }],
+                    }
+                ],
                 "consumes": []
             }
         },
@@ -4360,7 +4368,8 @@
                 "tags": [
                     "Case"
                 ],
-                "parameters": [{
+                "parameters": [
+                    {
                         "name": "iproc_id",
                         "in": "path",
                         "schema": {
@@ -4368,7 +4377,8 @@
                             "required": true,
                             "minimum": 1
                         }
-                    }],
+                    }
+                ],
                 "produces": [
                     "application/json; charset=utf-8"
                 ],
@@ -4439,19 +4449,18 @@
                         "name": "body",
                         "in": "body",
                         "schema": {
-                            
-  "type": "object",
-  "properties": {
-    "header_id": {
-      "type": "string"
-    }
-  },
-  "required": [
-    "header_id"
-  ],
+                            "type": "object",
+                            "properties": {
+                                "header_id": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "header_id"
+                            ],
                             "example": {
-    "header_id": "41"
-}
+                                "header_id": "41"
+                            }
                         }
                     }
                 ],
