@@ -1086,7 +1086,7 @@
           }
         }
       },
-      "/tasks/finish/{ttask_id}": {
+      "/tasks/finish/{itask_id}": {
         "post": {
           "tags": [
             "Task",
@@ -1096,7 +1096,7 @@
           "operationId": "Complete the task",
           "parameters": [
             {
-              "name": "ttask_id",
+              "name": "itask_id",
               "in": "path",
               "required": true,
               "schema": {}
