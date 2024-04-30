@@ -106,6 +106,24 @@
           ],
           "summary": "Logout from current session",
           "operationId": "Logout",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "refreshToken": {
+                      "type": "string"
+                    }
+                  },
+                  "example": {
+                    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlN1cGVyU2VjcmV0SW5mb3JtYXRpb25zIiwiaWF0IjoxNTE2MjM5MDIyfQ.poIJQskCRColeGS3Oy1DWAxRdbt069akcsT75Pocy84"
+                  }
+                }
+              }
+            },
+            "required": false
+          },
           "responses": {
             "200": {
               "description": "OK",
