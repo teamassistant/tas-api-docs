@@ -2,13 +2,10 @@
     "openapi": "3.0.1",
     "info": {
       "title": "Teamassistant (TAS)",
-      "description": "REST Api is a complex API for managing entities of TAS and controlling workflows.\n\n## Retrieving Lists\n\nYou can pass parameters for sorting and filtering.\n\n### Additional parameters\n\n+ Parameters\n        + offset: 0 (number, optional) \n            - The number of items to skip before returning anything.\n        + limit: 100 (number, optional) - (number, optional) \n            - The number of returned items.\n        + filter: (string, optional) \n            - columnName<like>value\n            - (<eq>|<ne>|<gt>|<lt>|<ge>|<le>|<like>|<nlike>)(<and|or>)\n        + order: columnName\n        + sort: asc|desc",
+      "description": "TAS API Documentation",
       "version": ""
     },
     "servers": [
-      {
-        "url": "http://polls.apiblueprint.org/"
-      }
     ],
     "tags": [],
     "paths": {
