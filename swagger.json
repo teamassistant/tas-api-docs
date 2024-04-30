@@ -2,7 +2,7 @@
     "openapi": "3.0.1",
     "info": {
       "title": "Teamassistant (TAS)",
-      "description": "TAS API Documentation",
+      "description": "**Welcome to the Team Assistant BPM Platform API Documentation**\n\nWelcome to the API documentation for Team Assistant, your go-to BPM (Business Process Management) platform. This documentation provides comprehensive guidance on integrating and leveraging the functionalities of our platform programmatically.\n\n**Getting Started**\n\nTo begin utilizing our API, you’ll need to authenticate your requests. Please ensure you have access to your backend URL. Use the '/authenticate' method to obtain an authentication token, which you will then insert into the “Authorize” field. This token should be provided as a Bearer token.\n\n**Server Configuration**\n\nIn the “Server” field, please input your backend URL where the API requests will be directed.\n\n**Explore the Endpoints**\n\nOnce authenticated, you can explore the various endpoints available to streamline your business processes, manage tasks, and enhance collaboration within your teams.\n\n**Questions or Assistance**\n\nIf you have any questions, encounter issues, or need assistance, don’t hesitate to reach out to our support team https://www.teamassistant.app/en/contact-2/",
       "version": ""
     },
     "servers": [
