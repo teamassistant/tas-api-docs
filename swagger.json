@@ -6,6 +6,14 @@
       "version": ""
     },
     "servers": [
+        {
+            "url": "https://{host}",
+            "variables": {
+                "host": {
+                    "default": ""
+                }
+            }
+        }
     ],
     "tags": [],
     "paths": {
