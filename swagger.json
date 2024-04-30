@@ -377,6 +377,9 @@
           "tags": [
             "Task"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "List of tasks that are not only mine (for ex. 'tasks to pull')",
           "operationId": "List of tasks that are not only mine",
           "parameters": [
@@ -639,6 +642,9 @@
           "tags": [
             "Task"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Get task details",
           "operationId": "Get Task",
           "parameters": [
@@ -1092,6 +1098,9 @@
             "Task",
             "Initiate case and complete assigned task"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Complete the task",
           "operationId": "Complete the task",
           "parameters": [
@@ -1132,6 +1141,9 @@
           "tags": [
             "Case"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Get list of all mine cases",
           "operationId": "Get list of all mine cases",
           "responses": {
@@ -1444,6 +1456,9 @@
           "tags": [
             "Case"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "List of processes that are not only mine (for ex. 'all processes')",
           "operationId": "List of processes that are not only mine (for ex. 'all processes')",
           "parameters": [
@@ -2639,6 +2654,9 @@
           "tags": [
             "Case"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Get Process",
           "operationId": "Get Process",
           "parameters": [
@@ -2663,6 +2681,9 @@
             "Case",
             "Initiate case and complete assigned task"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "parameters": [
             {
               "name": "iproc_id",
@@ -2749,6 +2770,9 @@
           "tags": [
             "Case"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Get Process Variables",
           "operationId": "Get Process Variables",
           "parameters": [
@@ -2772,6 +2796,9 @@
           "tags": [
             "Case"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Get Process Notes",
           "operationId": "Get Process Notes",
           "parameters": [
@@ -2795,6 +2822,9 @@
           "tags": [
             "Case"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Get Process Attachments",
           "operationId": "Get Process Attachments",
           "parameters": [
@@ -2909,6 +2939,9 @@
           "tags": [
             "Case"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Get Process Actual Tasks",
           "operationId": "Get Process Actual Tasks",
           "parameters": [
@@ -2932,6 +2965,9 @@
           "tags": [
             "Case"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Get Process History Tasks",
           "operationId": "Get Process History Tasks",
           "parameters": [
@@ -3104,6 +3140,9 @@
             "Case",
             "Initiate case and complete assigned task"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "parameters": [
             {
               "name": "tproc_id",
@@ -3205,6 +3244,9 @@
           "tags": [
             "Overview"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "parameters": [
             {
               "name": "cv_id",
@@ -3226,6 +3268,9 @@
           "tags": [
             "Overview"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "parameters": [
             {
               "name": "cv_id",
@@ -3387,6 +3432,9 @@
           "tags": [
             "Users"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "All Users",
           "description": "Retrieve all non-deleted users.",
           "operationId": "All Users",
@@ -3521,6 +3569,9 @@
           "tags": [
             "Users"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Create/Update user",
           "operationId": "Create/Update user",
           "requestBody": {
@@ -3613,6 +3664,9 @@
           "tags": [
             "Users"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "All Deleted Users",
           "operationId": "All Deleted Users",
           "responses": {
@@ -3748,6 +3802,9 @@
           "tags": [
             "Users"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "parameters": [
             {
               "name": "orgstr_id",
@@ -3891,6 +3948,9 @@
           "tags": [
             "Users"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "parameters": [
             {
               "name": "user_id",
@@ -4015,6 +4075,9 @@
           "tags": [
             "Users"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Get Info of Logged User",
           "operationId": "Get Info of Logged User",
           "responses": {
@@ -4121,6 +4184,9 @@
           "tags": [
             "Org. structure"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Get org.structure",
           "operationId": "Get org.structure",
           "responses": {
@@ -4337,6 +4403,9 @@
           "tags": [
             "User"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Get User Vice For Logged User",
           "operationId": "Get User Vice For Logged User",
           "responses": {
@@ -4416,6 +4485,9 @@
           "tags": [
             "User"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Create Vice",
           "operationId": "Create Vice",
           "responses": {
@@ -4448,6 +4520,9 @@
           "tags": [
             "User"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "parameters": [
             {
               "name": "id",
@@ -4489,6 +4564,9 @@
           "tags": [
             "Planning"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "All Plans",
           "operationId": "All Plans",
           "responses": {
@@ -4600,6 +4678,9 @@
           "tags": [
             "User"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Settings of Logged User",
           "operationId": "Settings of Logged User",
           "responses": {
@@ -4670,6 +4751,9 @@
           "tags": [
             "User"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Update Settigs",
           "operationId": "Update Settigs",
           "requestBody": {
@@ -4742,6 +4826,9 @@
           "tags": [
             "Roles"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "All Roles",
           "operationId": "All Roles",
           "responses": {
@@ -4836,6 +4923,9 @@
           "tags": [
             "Roles"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Create role",
           "operationId": "Create role",
           "requestBody": {
@@ -4897,6 +4987,9 @@
           "tags": [
             "Roles"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Get Role",
           "operationId": "Get Role",
           "parameters": [
@@ -4970,6 +5063,9 @@
           "tags": [
             "Roles"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Structure of Roles",
           "operationId": "Structure of Roles",
           "responses": {
@@ -5070,6 +5166,9 @@
           "tags": [
             "Documents"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "All Files",
           "description": "Retrieve all files for user.",
           "operationId": "All Files",
@@ -5240,6 +5339,9 @@
           "tags": [
             "Documents"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Current Files",
           "description": "Retrieve current files for user.",
           "operationId": "Current Files",
@@ -5410,6 +5512,9 @@
           "tags": [
             "Documents"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Deleted Files",
           "description": "Retrieve all deleted files for user.",
           "operationId": "Deleted Files",
@@ -5580,6 +5685,9 @@
           "tags": [
             "Documents"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Update logical tag relations",
           "operationId": "Update logical tag relations",
           "requestBody": {
@@ -5664,6 +5772,9 @@
           "tags": [
             "Documents"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Update tags",
           "operationId": "Update tags",
           "requestBody": {
@@ -5731,6 +5842,9 @@
           "tags": [
             "Documents"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Update file tags",
           "operationId": "Update file tags",
           "requestBody": {
@@ -5799,6 +5913,9 @@
           "tags": [
             "Documents"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Search file",
           "operationId": "Search file",
           "requestBody": {
@@ -5998,6 +6115,9 @@
           "tags": [
             "Documents"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Update folder",
           "operationId": "Update folder",
           "requestBody": {
@@ -6051,6 +6171,9 @@
           "tags": [
             "Documents"
           ],
+          "security": [{
+            "bearerAuth": []
+          }],
           "summary": "Delete folder",
           "operationId": "Delete folder",
           "requestBody": {
